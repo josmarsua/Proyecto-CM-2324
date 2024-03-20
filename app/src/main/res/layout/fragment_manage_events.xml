@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ManageEventsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="80dp"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/event_create_activity_button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:onClick="onCreateEventButtonClick"
+            android:text="@string/create_event"
+            android:visibility="visible" />
+
+        <Spinner
+            android:id="@+id/visibility_levels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/select_event_visibility" />
+
+        <ScrollView
+            android:id="@+id/management_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:background="@color/purple_light_haze">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/management_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:padding="2dp" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

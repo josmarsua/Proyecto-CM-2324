@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/allerta_stencil</item>
+        <item>@font/bevan</item>
+        <item>@font/bungee_inline</item>
+        <item>@font/bungee_shade</item>
+        <item>@font/fugaz_one</item>
+        <item>@font/hammersmith_one</item>
+        <item>@font/istok_web_italic</item>
+        <item>@font/jetbrains_mono_extrabold_italic</item>
+        <item>@font/jetbrains_mono_light</item>
+        <item>@font/jetbrains_mono_medium</item>
+        <item>@font/merriweather_sans</item>
+    </array>
+</resources>

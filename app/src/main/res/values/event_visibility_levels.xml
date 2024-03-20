@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="event_visibility_levels">
+        <item>Public</item>
+        <item>Private</item>
+    </string-array>
+</resources>

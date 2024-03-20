@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="lightTheme" parent="Theme.Material3.DynamicColors.DayNight">
+        <!-- Customize your theme attributes -->
+        <item name="colorPrimary">@color/orange_neon</item>
+        <item name="colorPrimaryDark">@color/charcoal</item>
+        <item name="colorAccent">@color/orange_neon</item>"
+        <item name="android:windowBackground">@color/purple_light_haze</item>
+        <item name="android:textColor">@color/charcoal</item>
+        <item name="colorSurface">@color/purple_light_haze</item>
+        <item name="colorOnSurface">@color/charcoal</item>
+        <item name="colorSecondary">@color/orange_neon</item>
+
+         <!--<item name="windowActionBar">false</item> -->
+        <!-- Add more theme attributes as needed -->
+    </style>
+</resources>

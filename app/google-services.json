@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "2155905980",
+    "project_id": "eventbuddy-d57b7",
+    "storage_bucket": "eventbuddy-d57b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2155905980:android:f930a6157859978930e1b9",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2155905980-pk06neg5fa1j2aifjv6n63br7fcfk8q2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXc1EISZFtWLVnD6GfV6UipQcG41v9Uzo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2155905980-pk06neg5fa1j2aifjv6n63br7fcfk8q2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
