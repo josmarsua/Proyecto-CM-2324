@@ -5,86 +5,87 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="?android:attr/colorBackground"
+        android:orientation="vertical"
         android:padding="16dp">
 
         <TextView
-            android:text="@string/create_event"
-            android:textSize="24sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_margin="16dp"
-            />
+            android:text="@string/create_event"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/event_name"
-            android:hint="@string/event_name"
-            android:inputType="text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:hint="@string/event_name"
+            android:inputType="text"
+            android:textColor="?android:attr/colorForeground" />
         />
 
         <EditText
             android:id="@+id/event_description"
-            android:hint="@string/event_description"
-            android:inputType="text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:hint="@string/event_description"
+            android:inputType="text" />
         />
 
         <EditText
             android:id="@+id/event_view_category"
-            android:hint="@string/event_category"
-            android:inputType="text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:hint="@string/event_category"
+            android:inputType="text" />
         />
 
         <EditText
             android:id="@+id/event_location"
-            android:hint="@string/event_location"
-            android:inputType="text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:hint="@string/event_location"
+            android:inputType="text" />
         />
 
         <Button
             android:id="@+id/event_Date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/pick_date"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:text="@string/pick_date" />
         />
 
         <Button
             android:id="@+id/event_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/pick_time"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:text="@string/pick_time" />
         />
 
         <Button
             android:id="@+id/event_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/select_image"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:text="@string/select_image" />
         />
 
         <Spinner
             android:id="@+id/event_visibility_levels"
-            android:text="@string/select_event_visibility"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:text="@string/select_event_visibility" />
 
         <Button
             android:id="@+id/event_create_button"

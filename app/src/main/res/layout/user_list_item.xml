@@ -1,8 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="?android:attr/colorBackground">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/user_card"
@@ -14,18 +15,18 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="5dp"
+        android:background="@color/purple_light_haze"
+        android:backgroundTint="@color/purple_light_haze"
         android:checkable="true"
         android:clickable="true"
         android:focusable="true"
-        android:background="@color/purple_light_haze"
-        android:backgroundTint="@color/purple_light_haze"
         app:cardCornerRadius="20dp"
         app:strokeWidth="1.5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/purple_light_haze"
+            android:background="@color/orange_neon"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
@@ -74,9 +75,9 @@
                     android:layout_height="100dp"
                     android:layout_alignParentBottom="true"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
                     android:src="@drawable/account" />
 
             </RelativeLayout>

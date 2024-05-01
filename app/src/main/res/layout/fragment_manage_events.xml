@@ -3,13 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
     tools:context=".fragments.ManageEventsFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:layout_marginBottom="80dp"
+        android:background="?android:attr/colorBackground"
+        android:orientation="vertical"
         android:padding="5dp">
 
         <Button
@@ -34,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="0dp"
-            android:background="@color/purple_light_haze">
+            android:background="?android:attr/colorBackground">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/management_recycler_view"

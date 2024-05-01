@@ -7,40 +7,38 @@
 
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/charcoal"
+        android:background="?android:attr/colorBackground"
+        android:orientation="vertical"
         android:padding="30dp">
 
         <TextView
-            android:text="Login"
-            android:textSize="30sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/jetbrains_mono_medium"
-            android:textStyle="bold"
-            android:textColorHint="@color/white"
-            android:textColor="@color/purple_light_haze"
             android:layout_margin="18dp"
-            />
+            android:fontFamily="@font/jetbrains_mono_medium"
+            android:text="Login"
+            android:textColor="?android:attr/colorForeground"
+            android:textColorHint="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/login_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/charcoal_light"
+            android:hint="@string/username"
             android:textColorHint="@color/purple_light_haze"
             app:endIconDrawable="@drawable/person_new"
-            app:endIconTint="@color/purple_light_haze"
-            android:background="@color/charcoal_light"
             app:endIconMode="custom"
-            android:hint="@string/username">
+            app:endIconTint="@color/purple_light_haze">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                />
+                android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -48,18 +46,17 @@
             android:id="@+id/login_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="@color/purple_light_haze"
             android:layout_marginTop="20dp"
             android:background="@color/charcoal_light"
-            app:passwordToggleEnabled="true"
+            android:hint="@string/password"
             android:inputType="textPassword"
-            android:hint="@string/password">
+            android:textColorHint="@color/purple_light_haze"
+            app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                />
+                android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -70,11 +67,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_margin="30dp"
+            android:backgroundTint="@color/orange_neon"
+            android:fontFamily="@font/jetbrains_mono_medium"
+            android:text="@string/login"
             android:textColor="@color/charcoal"
             android:textSize="20sp"
-            android:fontFamily="@font/jetbrains_mono_medium"
-            android:backgroundTint="@color/orange_neon"
-            android:text="@string/login"
 
 
             />
@@ -86,29 +83,29 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_margin="16dp"
-            android:layout_marginBottom ="50dp"
             android:layout_marginTop="30dp"
-            android:text="@string/don_t_have_account"
-            android:textSize="15sp"
+            android:layout_marginBottom="50dp"
             android:fontFamily="@font/jetbrains_mono_light"
-            android:textColor="@color/purple_light_haze"
-            android:visibility="visible"/>
+            android:text="@string/don_t_have_account"
+            android:textColor="?android:attr/colorForeground"
+            android:textSize="15sp"
+            android:visibility="visible" />
 
         <Button
             android:id="@+id/register_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/charcoal"
-            android:fontFamily="@font/jetbrains_mono_light"
             android:layout_gravity="center_horizontal"
             android:backgroundTint="@color/orange_neon"
-            android:text="Register" />
+            android:fontFamily="@font/jetbrains_mono_light"
+            android:text="Register"
+            android:textColor="@color/charcoal" />
 
-<!--        <ImageView-->
-<!--            android:layout_width="200dp"-->
-<!--            android:layout_height="200dp"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:src="@mipmap/flower_foreground" />-->
+        <!--        <ImageView-->
+        <!--            android:layout_width="200dp"-->
+        <!--            android:layout_height="200dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:src="@mipmap/flower_foreground" />-->
 
     </LinearLayout>
 

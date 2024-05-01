@@ -39,20 +39,6 @@ Here are some planned features and improvements for EventBuddy:
 - Event rating and reviews: Allow users to rate and review events they've attended. These ratings and reviews can help other users make informed decisions about attending events and provide valuable feedback for event organizers to improve future events.
 
 
-# Your Team
- 
-| Role  | Name  | Mail Address  |
-|---|---|---|
-| **Product Owner**  | Denis Suljić  | denis.suljic@student.tugraz.at  |
-| **Technical Lead**  | Mathias Schneck | mathias.schneck@student.tugraz.at  |
-| **Developers**   | Arijana Kapić  | arijana.kapic@student.tugraz.at  |
-|   | Natia Hadiliia  | hadiliia@student.tugraz.at  |
-|   | Nedžma Musovic  |  nedzma.musovic@tugraz.at |
-|   | Nikola Maletic  |  nikola.maletic@student.tugraz.at |
-|   | Pablo Manuel Neto Mateo  | pablo.netomateo@student.tugraz.at  |
-|   | Isuru Lakshitha Haththotuwa  | isuru.haththotuwa@student.tugraz.at  |
-|   | Amar Šehović  | asehovic@student.tugraz.at  |
-
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.

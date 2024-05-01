@@ -154,6 +154,7 @@
                     android:ems="10"
                     android:fontFamily="sans-serif-condensed"
                     android:gravity="start|end"
+                    android:textColor="?android:attr/colorForeground"
                     android:textSize="20sp" />
 
             </LinearLayout>
@@ -214,11 +215,11 @@
                     android:layout_marginEnd="25dp"
                     android:backgroundTint="@color/purple_haze"
                     android:fontFamily="sans-serif-condensed"
-                    android:textStyle="italic"
                     android:gravity="center"
                     android:text="@string/user_attending"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"/>
+                    android:textColor="?android:attr/colorForeground"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
             </LinearLayout>
 
             <LinearLayout
@@ -236,7 +237,8 @@
                     android:layout_marginEnd="8dp"
                     android:backgroundTint="@color/charcoal"
                     android:fontFamily="@font/jetbrains_mono_light"
-                    android:text="Add to Watchlist" />
+                    android:text="Add to Watchlist"
+                    android:textColor="@color/green_neon" />
 
                 <Space
                     android:layout_width="30dp"
@@ -248,7 +250,8 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/charcoal"
                     android:fontFamily="@font/jetbrains_mono_light"
-                    android:text="I'm Attending" />
+                    android:text="I'm Attending"
+                    android:textColor="@color/pink_neon" />
 
             </LinearLayout>
 
@@ -307,15 +310,16 @@
                 android:layout_width="350dp"
                 android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
-                android:background="@color/purple_light_haze">
+                android:background="?android:attr/colorBackground">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recycler_view_comments"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginBottom="15dp"
+                    android:background="?android:attr/colorBackground"
                     android:padding="3dp" />
-<!--                </ScrollView>-->
+                <!--                </ScrollView>-->
             </RelativeLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -329,7 +333,8 @@
                     android:layout_height="50dp"
                     android:hint="Start typing to add a comment"
 
-                    android:textAppearance="@style/TextAppearance.AppCompat">
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="?android:attr/colorForeground">
 
                 </com.google.android.material.textfield.TextInputEditText>
 

@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="250dp">
+    android:layout_height="250dp"
+    android:background="?android:attr/colorBackground">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/comment_card_view"
@@ -24,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
-            android:background="@color/purple_haze"
+            android:background="@color/royal_blue"
 
             android:orientation="vertical">
 
@@ -72,7 +73,7 @@
                 android:text="Comment by"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="15sp"
-                android:textStyle="italic"
+                android:textStyle="bold|italic"
 
                 />
         </LinearLayout>

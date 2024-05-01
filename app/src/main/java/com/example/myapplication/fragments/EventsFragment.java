@@ -42,6 +42,7 @@ public class EventsFragment extends Fragment {
     private BottomNavigationView menu;
     private String selectedCategory = "All events";
 
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,

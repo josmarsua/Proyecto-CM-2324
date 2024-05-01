@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="?android:attr/colorBackground">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -22,17 +23,18 @@
                 android:fontFamily="@font/jetbrains_mono_extrabold_italic"
                 android:gravity="center"
                 android:text="No matching results found!"
-                android:textColor="@color/charcoal"
+                android:textColor="?android:attr/colorForeground"
                 android:textSize="18sp" />
 
             <TextView
+                android:id="@+id/see_no_evil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/see_no_evil"
-                android:textSize="32sp"
-                android:gravity="center"
                 android:layout_marginTop="4dp"
-                android:fontFamily="@font/jetbrains_mono_medium" />
+                android:fontFamily="@font/jetbrains_mono_medium"
+                android:gravity="center"
+                android:textColor="?android:attr/colorForeground"
+                android:textSize="32sp" />
 
         </LinearLayout>
 
@@ -40,15 +42,14 @@
             android:id="@+id/recyclerview_user_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="90dp"
-            android:layout_marginBottom="80dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
             android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="80dp"
             android:padding="2dp"
             app:layout_behavior="@string/searchbar_scrolling_view_behavior"
-            tools:ignore="PrivateResource">
-        </androidx.recyclerview.widget.RecyclerView>
+            tools:ignore="PrivateResource"></androidx.recyclerview.widget.RecyclerView>
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
@@ -56,14 +57,14 @@
 
             <com.google.android.material.search.SearchBar
                 android:id="@+id/search_bar"
+                style="@style/Widget.Material3.Button.OutlinedButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="?android:attr/colorForegroundInverse"
+                android:backgroundTint="?android:attr/colorForegroundInverse"
+                android:hint="Find new friends"
                 android:queryBackground="@null"
-                android:submitBackground="@null"
-                android:background="@color/purple_light_haze"
-                style="@style/Widget.Material3.Button.OutlinedButton"
-                android:backgroundTint="@color/purple_light_haze"
-                android:hint="Find new friends">
+                android:submitBackground="@null">
 
             </com.google.android.material.search.SearchBar>
         </com.google.android.material.appbar.AppBarLayout>
@@ -75,8 +76,8 @@
             android:hint="@string/searchHintUserList"
             android:queryBackground="@null"
             android:submitBackground="@null"
-            app:showAsAction="always"
-            app:layout_anchor="@id/search_bar">
+            app:layout_anchor="@id/search_bar"
+            app:showAsAction="always">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view"

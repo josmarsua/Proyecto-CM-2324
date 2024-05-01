@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
     tools:context=".fragments.AccountFragment">
 
     <ScrollView
@@ -20,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="50dp"
+            android:background="?android:attr/colorBackground"
             android:orientation="vertical"
             android:padding="12dp">
 
@@ -39,7 +40,7 @@
                     android:fontFamily="@font/jetbrains_mono_medium"
                     android:text="Welcome Back,"
                     android:textSize="25sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/full_name"
@@ -52,8 +53,8 @@
                     android:gravity="center"
                     android:text="@string/full_name"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:textSize="25sp" />
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <com.google.android.material.card.MaterialCardView
@@ -98,12 +99,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:background="?android:attr/colorBackground"
                 android:backgroundTint="@color/purple_light_haze"
                 app:strokeColor="@color/purple_light_haze">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="?android:attr/colorBackground"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -135,7 +138,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="5dp"
                         android:background="@drawable/text_input_background"
-                        android:backgroundTint="@color/purple_light_haze"
+                        android:backgroundTint="?android:attr/colorForeground"
                         android:orientation="horizontal">
 
                         <com.google.android.material.textview.MaterialTextView
@@ -146,6 +149,7 @@
                             android:layout_margin="10dp"
                             android:fontFamily="@font/jetbrains_mono_light"
                             android:text="Username:"
+                            android:textColor="?android:attr/colorForegroundInverse"
                             android:textSize="16sp" />
 
                         <LinearLayout
@@ -169,6 +173,7 @@
                                     android:enabled="true"
                                     android:focusable="true"
                                     android:inputType="text"
+                                    android:textColor="?android:attr/colorForegroundInverse"
                                     android:textSize="16sp" />
                             </com.google.android.material.textfield.TextInputLayout>
                         </LinearLayout>
@@ -194,7 +199,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:background="@drawable/text_input_background"
-                        android:backgroundTint="@color/purple_light_haze"
+                        android:backgroundTint="?android:attr/colorForeground"
                         android:orientation="horizontal">
 
                         <com.google.android.material.textview.MaterialTextView
@@ -204,7 +209,8 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="12dp"
                             android:inputType="textPassword"
-                            android:text="Password:" />
+                            android:text="Password:"
+                            android:textColor="?android:attr/colorForegroundInverse" />
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -253,7 +259,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:background="@drawable/text_input_background"
-                        android:backgroundTint="@color/purple_light_haze"
+                        android:backgroundTint="?android:attr/colorForeground"
                         android:orientation="horizontal">
 
                         <com.google.android.material.textview.MaterialTextView
@@ -265,6 +271,7 @@
                             android:layout_margin="10dp"
                             android:fontFamily="@font/jetbrains_mono_light"
                             android:text="Email: "
+                            android:textColor="?android:attr/colorForegroundInverse"
                             android:textSize="16sp" />
 
                         <LinearLayout
@@ -317,7 +324,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:background="@drawable/text_input_background"
-                        android:backgroundTint="@color/purple_light_haze"
+                        android:backgroundTint="?android:attr/colorForeground"
                         android:orientation="horizontal">
 
                         <com.google.android.material.textview.MaterialTextView
@@ -329,7 +336,7 @@
                             android:layout_margin="10dp"
                             android:fontFamily="@font/jetbrains_mono_light"
                             android:text="Phone No.: "
-                            android:textColor="@color/charcoal"
+                            android:textColor="?android:attr/colorForegroundInverse"
                             android:textSize="16sp" />
 
                         <LinearLayout
@@ -383,7 +390,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/text_input_background"
-                        android:backgroundTint="@color/purple_light_haze"
+                        android:backgroundTint="?android:attr/colorForeground"
                         android:orientation="horizontal">
 
                         <com.google.android.material.textview.MaterialTextView
@@ -394,7 +401,7 @@
                             android:layout_margin="10dp"
                             android:fontFamily="@font/jetbrains_mono_light"
                             android:text="About Me: "
-                            android:textColor="@color/charcoal"
+                            android:textColor="?android:attr/colorForegroundInverse"
                             android:textSize="16sp" />
 
                         <LinearLayout
@@ -439,32 +446,34 @@
                             android:textColor="@color/charcoal" />
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp">
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/add_friends"
-                        style="@style/Widget.Material3.Button.OutlinedButton"
-                        android:layout_width="150dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center_vertical|center"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="50dp"
-                        android:layout_marginBottom="5dp"
-                        android:backgroundTint="@color/charcoal"
-                        android:fontFamily="@font/jetbrains_mono_light"
-                        android:padding="10dp"
-                        android:text="@string/add_friends"
 
-                        android:textColor="@color/white" />
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/add_friends"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_vertical|center"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:backgroundTint="@color/charcoal"
+                            android:fontFamily="@font/jetbrains_mono_light"
+                            android:padding="10dp"
+                            android:text="@string/add_friends"
+
+                            android:textColor="@color/white" />
 
 
                         <com.google.android.material.button.MaterialButton
-                            style="@style/Widget.Material3.Button.OutlinedButton"
-
                             android:id="@+id/view_friend_requests"
+
+                            style="@style/Widget.Material3.Button.OutlinedButton"
                             android:layout_width="150dp"
                             android:layout_height="45dp"
                             android:layout_gravity="center_vertical|center"

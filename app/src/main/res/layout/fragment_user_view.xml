@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
     tools:context=".fragments.UserViewFragment">
 
     <LinearLayout
@@ -12,28 +12,30 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="12dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/user_image_and_name_card"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="8dp"
+                android:backgroundTint="@color/purple_light_haze"
                 app:cardCornerRadius="50dp"
                 app:strokeColor="@color/charcoal"
-                app:strokeWidth="1.5dp"
-                android:backgroundTint="@color/purple_light_haze">
+                app:strokeWidth="1.5dp">
 
-            <ImageView
-                android:id="@+id/other_user_profile_image"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                <ImageView
+                    android:id="@+id/other_user_profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
 
-                android:layout_gravity="left"
-                android:layout_marginBottom="20dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/account" />
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/account" />
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.textview.MaterialTextView
@@ -41,8 +43,8 @@
                 style="@style/Widget.AppCompat.TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
                 android:layout_gravity="center"
+                android:layout_marginStart="15dp"
                 android:text="@string/full_name"
                 android:textAlignment="center"
                 android:textSize="20dp"
@@ -55,8 +57,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
-            app:strokeColor="@color/purple_light_haze"
-            android:backgroundTint="@color/purple_light_haze">
+            android:backgroundTint="@color/purple_light_haze"
+            app:strokeColor="@color/purple_light_haze">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -78,83 +80,84 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:textSize="15sp"
                         android:fontFamily="@font/jetbrains_mono_light"
+                        android:text="Username:"
                         android:textColor="@color/charcoal"
-                        android:text="Username:" />
+                        android:textSize="15sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
                     android:background="@drawable/text_input_background"
                     android:backgroundTint="@color/purple_light_haze"
-                    android:layout_marginBottom="5dp">
+                    android:orientation="horizontal">
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/other_user_email"
                         style="@style/Widget.AppCompat.TextView"
-                        android:text="Email: "
-                        android:fontFamily="@font/jetbrains_mono_light"
-                        android:textSize="15sp"
-                        android:textColor="@color/charcoal"
-                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_width="wrap_content"/>
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/jetbrains_mono_light"
+                        android:text="Email: "
+                        android:textColor="@color/charcoal"
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
                     android:background="@drawable/text_input_background"
                     android:backgroundTint="@color/purple_light_haze"
-                    android:layout_marginBottom="5dp">
+                    android:orientation="horizontal">
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/other_user_phone_no"
                         style="@style/Widget.AppCompat.TextView"
-                        android:text="Phone No.: "
-                        android:fontFamily="@font/jetbrains_mono_light"
-                        android:textSize="15sp"
-                        android:textColor="@color/charcoal"
-                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_width="wrap_content"/>
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/jetbrains_mono_light"
+                        android:text="Phone No.: "
+                        android:textColor="@color/charcoal"
+                        android:textSize="15sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
                     android:background="@drawable/text_input_background"
                     android:backgroundTint="@color/purple_light_haze"
-                    android:layout_marginBottom="10dp">
+                    android:orientation="horizontal">
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/other_user_bio"
                         style="@style/Widget.AppCompat.TextView"
-                        android:text="About Me: "
-                        android:fontFamily="@font/jetbrains_mono_light"
-                        android:textSize="15sp"
-                        android:textColor="@color/charcoal"
-                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_width="wrap_content"/>
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/jetbrains_mono_light"
+                        android:text="About Me: "
+                        android:textColor="@color/charcoal"
+                        android:textSize="15sp" />
                 </LinearLayout>
 
                 <Button
                     android:id="@+id/friend_request_status_btn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/charcoal"
-                    android:fontFamily="@font/jetbrains_mono_medium"
+                    android:layout_gravity="center_vertical|bottom"
                     android:layout_marginTop="30dp"
                     android:layout_marginBottom="20dp"
-                    android:layout_gravity="center_vertical|bottom"
-                    android:text="@string/add_as_a_friend" />
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:fontFamily="@font/jetbrains_mono_medium"
+                    android:text="@string/add_as_a_friend"
+                    android:textColor="?android:attr/colorBackground" />
 
                 <Button
                     android:id="@+id/back1"
@@ -163,8 +166,8 @@
                     android:layout_marginEnd="50dp"
                     android:backgroundTint="@color/charcoal"
                     android:text="Back"
-                    android:textSize="15sp"
                     android:textColor="@color/purple_light_haze"
+                    android:textSize="15sp"
                     app:icon="@drawable/baseline_keyboard_arrow_left_24"
                     app:iconSize="20dp"
                     app:iconTint="@color/purple_light_haze" />

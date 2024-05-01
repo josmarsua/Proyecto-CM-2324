@@ -3,20 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="250dp">
+    android:layout_height="250dp"
+    android:background="?android:attr/colorBackground">
 
     <com.google.android.material.card.MaterialCardView
-    android:clickable="true"
-    android:focusable="true"
-    android:checkable="true"
-    style="@style/Widget.Material3.CardView.Elevated"
-    android:id="@+id/card_view"
-    android:layout_width="match_parent"
-    android:layout_height="250dp"
-    android:padding="2dp"
-    android:layout_margin="10dp"
-    app:cardCornerRadius="20dp">
-
+        android:id="@+id/card_view"
+        style="@style/Widget.Material3.CardView.Elevated"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="2dp"
+        app:cardCornerRadius="20dp">
 
 
         <ImageView
@@ -31,13 +31,14 @@
             android:layout_marginBottom="0dp"
             android:scaleType="centerCrop"
             tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
         <ImageView
             android:id="@+id/promo_star"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/promo_star"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="72dp"

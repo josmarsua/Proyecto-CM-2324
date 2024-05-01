@@ -58,6 +58,8 @@ public class MenuActivity extends AppCompatActivity{
 
     }
 
+
+
     private void changeFragment(Fragment fragment){
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
