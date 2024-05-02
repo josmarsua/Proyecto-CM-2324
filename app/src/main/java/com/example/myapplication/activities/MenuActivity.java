@@ -15,6 +15,7 @@ import com.example.myapplication.fragments.EventViewFragment;
 import com.example.myapplication.fragments.EventsFragment;
 import com.example.myapplication.fragments.LoginFragmentI;
 import com.example.myapplication.fragments.ManageEventsFragment;
+import com.example.myapplication.fragments.MapFragment;
 import com.example.myapplication.fragments.SearchFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -51,6 +52,9 @@ public class MenuActivity extends AppCompatActivity{
                 return true;
             } else if(id == R.id.app_bar_search){
                 if(GlobalState.isLoggedIn()) changeFragment(new SearchFragment());
+                return true;
+            } else if(id == R.id.map) {
+                changeFragment(new MapFragment());
                 return true;
             }
             return true;

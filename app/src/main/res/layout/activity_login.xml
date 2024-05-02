@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="?android:attr/colorBackground">
 
 
     <LinearLayout
@@ -29,16 +30,17 @@
             android:id="@+id/login_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/charcoal_light"
+            android:background="?android:attr/colorBackground"
             android:hint="@string/username"
-            android:textColorHint="@color/purple_light_haze"
+            android:textColorHint="?android:attr/colorForeground"
             app:endIconDrawable="@drawable/person_new"
             app:endIconMode="custom"
             app:endIconTint="@color/purple_light_haze">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textColor="?android:attr/colorForeground" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -47,16 +49,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="@color/charcoal_light"
+            android:background="?android:attr/colorBackground"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:textColorHint="@color/purple_light_haze"
+            android:textColorHint="?android:attr/colorForeground"
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColor="?android:attr/colorForeground" />
 
         </com.google.android.material.textfield.TextInputLayout>
 

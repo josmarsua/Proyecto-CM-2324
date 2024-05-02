@@ -18,6 +18,10 @@
         android:icon="@drawable/searchnew"
         android:title="Search"
         app:actionViewClass="android.widget.SearchView" />
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/location"
+        android:title="Map"/>
     <item android:title="Account"
         android:id="@+id/account"
         android:icon="@drawable/account"/>

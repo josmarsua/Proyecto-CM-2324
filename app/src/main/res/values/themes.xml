@@ -4,7 +4,7 @@
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/orange_neon</item>
         <item name="colorPrimaryDark">@color/charcoal</item>
-        <item name="colorAccent">@color/orange_neon</item>"
+        <item name="colorAccent">#FFEE5B</item>"
         <item name="android:windowBackground">@color/purple_light_haze</item>
         <item name="android:textColor">@color/charcoal</item>
         <item name="colorSurface">@color/purple_light_haze</item>
