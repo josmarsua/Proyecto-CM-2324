@@ -1,6 +1,3 @@
-# Large_Team_5
-
-
 # Event Buddy - Join the fun with Event Buddy, events for everybody
 
 ## Description
